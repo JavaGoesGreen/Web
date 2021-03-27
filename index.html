@@ -25,15 +25,22 @@
   <title>Java Goes Green</title>
   <link rel="icon" href="Iconos/logo.ico">
 
-  <!-- Scripts de clientes -->
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Oxygen:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Montserrat:wght@600&family=Oxygen:wght@700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
   <!-- ----------------------- Sección: Encabezado ----------------------------- -->
-  <header>
+  <header id="top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
 
-      <a class="navbar-brand" href="#">Java Goes Green</a>
+      <a class="navbar-brand" href="#"><img src="imagenes/logo_trans.png"></img> Java Goes Green</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,13 +49,28 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#servicios">Servicios <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#servicios">Inicio<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicios">Servicios</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#proyectos">Proyectos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#empresas">Empresas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#clientes">Clientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#precios">Precios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#equipo">Equipo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
@@ -62,20 +84,25 @@
           <div class="container">
             <div class="inner cover">
               <h1 class="cover-heading">El futuro es verde</h1>
-              <p class="lead">Porque los avances tecnológicos no estan reñidos con la sostenibilidad</p>
+              <p class="lead">Industria y medio ambiente son compatibles</p>
               <p class="lead">
-                <a href="#" class="btn btn-lg btn-default">Conócenos</a>
+                <a href="#contacto" class="btn btn-lg btn-default">Más información</a>
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+
+    <a href="#top"><button id="arriba" type="button" class="btn btn-success" a href="#top">
+        &#9757;</button></a>
+
+
   </header>
   <main>
     <!-- ----------------------- Sección: Servicios ----------------------------- -->
     <section id="servicios">
-      <h2>SERVICIOS</h2>
       <div class="row">
         <div class="col-lg-4">
           <img class="bd-placeholder-img rounded-circle" width="140" height="140"
@@ -83,10 +110,10 @@
             aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
           <title>Placeholder</title>
           </img>
-          <h3>Algo de las placas</h3>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first
-            column.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          <h3>Parametrización de calidad y producción</h3>
+          <p>Desarrollamos la arquitectura de servidores de plantas fotovoltaicas para un seguimiento de su estado en
+            tiempo real. Si quieres saber más, ¡contáctanos!</p>
+          <p><a class="btn btn-secondary bg-success border-success" href="#contacto">Más detalles &raquo;</a></p>
         </div>
 
         <div class="col-lg-4">
@@ -95,9 +122,10 @@
           <title>Placeholder</title>
           </img>
           <h3>Soluciones informáticas</h3>
-          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
+          <p>Generamos aplicaciones web personalizadas para que los clientes puedan monitorizar su producción de manera
+            sencilla ¡Con un sólo click!
           </p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary bg-success border-success" href="#contacto">Más detalles &raquo;</a></p>
         </div>
 
         <div class="col-lg-4">
@@ -106,8 +134,9 @@
           <title>Placeholder</title>
           </img>
           <h3>Optimización</h3>
-          <p>And lastly this, the third column of representative placeholder content.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          <p>JGG Energy es un software de optimización de microrredes que ofrece múltiples recursos energéticos y viene
+            con herramientas de simulación, optimización y análisis de sensibilidad.</p>
+          <p><a class="btn btn-secondary bg-success border-success" href="#contacto">Más detalles &raquo;</a></p>
         </div>
       </div>
     </section>
@@ -118,7 +147,7 @@
 
         <div class="col-lg-6">
           <div class="jumbotron" id="movieflix">
-            <h1 class="display-3">MoviFlix</h1>
+            <h2 class="display-3">MoviFlix</h2>
             <p class="lead">Disfruta de tus peliculas de manera eco-friendly</p>
             <hr class="my-2">
             <p>Trabajamos para la empresa MovieFlix en software de gesión de películas en streaming</p>
@@ -130,14 +159,12 @@
 
         <div class="col-lg-6">
           <div class="jumbotron" id="spring">
-            <h1 class="display-3">Algo de Spring</h1>
-            <p class="lead">This is a simple jumbotron-style component for
-              calling extra attention.</p>
+            <h2 class="display-3">Proyecto Spring</h2>
+            <p class="lead">Aquí se pondrá el proyecto que haremos algun dia sobre Spring</p>
             <hr class="my-2">
-            <p>It uses utility classes for typography and
-              spacing to space content out within the larger container.</p>
+            <p>En serio, que ya lo pondremos cuando lo sepamos...</p>
             <p class="lead">
-              <a class="btn btn-primary btn-lg" href="#!" role="button">Some action</a>
+              <a class="btn btn-primary btn-lg" href="#!" role="button">Próximamente</a>
             </p>
           </div>
         </div>
@@ -145,92 +172,90 @@
     </section>
     <!-- ----------------------- Sección: Empresas ----------------------------- -->
     <section id="empresas" class="empresas">
-      <h2>EMPRESAS COLABORADORAS</h2>
+      <h2>EMPRESAS QUE CONFIAN EN NOSOTROS</h2>
       <div class="row">
-        <div class="container-fluid" data-aos="zoom-in">
+        <div class="container-fluid">
           <div class="row justify-content-center">
-            <div class="col-xl-10">
-              <div class="owl-carousel clients-carousel">
-                <img src="YelderBook/assets/img/clients/client-1.png" alt="">
-                <img src="YelderBook/assets/img/clients/client-2.png" alt="">
-                <img src="YelderBook/assets/img/clients/client-3.png" alt="">
-                <img src="YelderBook/assets/img/clients/client-4.png" alt="">
-                <img src="YelderBook/assets/img/clients/client-5.png" alt="">
-                <img src="YelderBook/assets/img/clients/client-6.png" alt="">
-                <img src="YelderBook/assets/img/clients/client-7.png" alt="">
-                <img src="YelderBook/assets/img/clients/client-8.png" alt="">
-              </div>
+            <div class="col-xl-12">
+                <img src="https://www.homerenergy.com/img/logos/homer-pro-logo.png" alt="">
+                <img src="https://solargis2-web-assets.s3.eu-west-1.amazonaws.com/public/Uploads/691dabedd0/solargis-logo-blog2.jpg" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsMpLXrEP7DFopRuR9ImIarbgdGba6rRqJc8aQ68Cu16PN5el96ndlLJh9VG45-flKg78&usqp=CAU" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuIxW9C-2W1yRwHlNK4cQgNuADlL8oujBhmej785ATZ5xwqASLfq49MST1utJ6m6s5OGA&usqp=CAU" alt="">
+                <img src="https://media-exp1.licdn.com/dms/image/C560BAQGE43OaivVxyA/company-logo_200_200/0/1558341053082?e=2159024400&v=beta&t=qsnhFob5awKnj4DTwnmxEacYghBQFdHo8wvQBz-ZnwQ" alt="">
+                <img src="https://www.madrigaldelasaltastorres.es/wp-content/uploads/2019/01/Iberdrola-logo-1024x578.jpg" alt="">
+                <img src="https://www.programapublicidad.com/wp-content/uploads/2020/10/acciona-logo-programapublicidad-800x600.jpg" alt="">
+                <img src="https://lh3.googleusercontent.com/proxy/qBQkqYLqLcbWVyDoA8lNp3-mc3PKvzwSV7BEq-SJxKRZuBtcal8bGStwpGqX7-_JUcQXllsubo8E9EY-nQzURbdflpDF4_Wiz_1FM-aARObWJs0EKD8" alt="">
             </div>
           </div>
         </div>
       </div>
     </section>
-       <!-- ----------------------- Sección: Clientes ----------------------------- -->
-       <section id="clientes" class="testimonial text-center">
-        <h2>CLIENTES</h2>
-          <div class="container">
-  
-              <div class="heading white-heading">
-                  Testimonial
-              </div>
-              <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
-               
-                  <div class="carousel-inner" role="listbox">
-                      <div class="carousel-item active">
-                          <div class="testimonial4_slide">
-                              <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg" class="img-circle img-responsive" />
-                              <p>Zi gueno, los zerbicio, mu gueno! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                              <h4>Elon Musk</h4>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                          <div class="testimonial4_slide">
-                              <img src="https://en.unesco.org/sites/default/files/esperanza_martinez-romero.png" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                              <h4>Ana Botín</h4>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                          <div class="testimonial4_slide">
-                              <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
-                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                              <h4>Andy Warhol</h4>
-                          </div>
-                      </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
-                      <span class="carousel-control-prev-icon"></span>
-                  </a>
-                  <a class="carousel-control-next" href="#testimonial4" data-slide="next">
-                      <span class="carousel-control-next-icon"></span>
-                  </a>
+    <!-- ----------------------- Sección: Clientes ----------------------------- -->
+    <section id="clientes" class="testimonial text-center">
+      <div class="container">
+        <div class="heading white-heading">
+          Nuestros clientes opinan
+        </div>
+        <div id="testimonial4"
+          class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x"
+          data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="testimonial4_slide">
+                <img
+                  src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg"
+                  class="img-circle img-responsive" />
+                <p>"En JGG la atención es excelente y las instalaciones son sumamente vanguardistas. Los integrantes del team son muy responsables y profesionales, siempre están en constante innovación para dar el mejor servicio a sus clientes y solucionar los imprevistos de una manera ágil y eficiente"</p>
+                <h4>Elon Musk</h4>
               </div>
             </div>
-      </section>
-    <!-- ----------------------- Sección: Precios ----------------------------- -->
-    <section id="precios">
-      <h2>PRECIOS</h2>
-      <div class="row">
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-          <h1 class="display-4 fw-normal">Pricing</h1>
-          <p class="fs-5 text-muted">Quickly build an effective pricing table for your potential customers with this
-            Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+            <div class="carousel-item">
+              <div class="testimonial4_slide">
+                <img src="https://en.unesco.org/sites/default/files/esperanza_martinez-romero.png"
+                  class="img-circle img-responsive" />
+                <p>"Java Goes Green es una compañía tecnológica de innovación constante que ofrece distintos servicios de software y consultoría digital así como soluciones informáticas de almacenamiento en nube y mucho más, cuenta con una trayectoria corta pero intensa trabajando en el sector y ayudando a otras empresas"
+                </p>
+                <h4>Ana Botín</h4>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial4_slide">
+                <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+                <p>"Esta Empresa tiene como mision contribuir con la mejor tecnologia disponible en el mercado mundial con el fin de incrementar la calidad de los productos y la productividad. Llevo trabajando con ellos desde sus inicios y me siento muy orgulloso de la calidad de sus servicios"
+                </p>
+                <h4>Andy Warhol</h4>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
         </div>
       </div>
+    </section>
+    <!-- ----------------------- Sección: Precios ----------------------------- -->
+    <section id="precios">
+      <h2>PLANES</h2>
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">Free</h4>
+              <h4 class="my-0 fw-normal">Basic</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+              <div class="row" id="precio">
+              <h3 class="card-title pricing-card-title">10€<small class="text-muted fw-light">/mo</small></h3>
+            </div>
               <ul class="list-unstyled mt-3 mb-4">
-                <li>10 users included</li>
-                <li>2 GB of storage</li>
-                <li>Email support</li>
-                <li>Help center access</li>
+                <li>Preparación de proyecto piloto</li>
+                <li>Soporte de correo</li>
+                <li>Acceso al centro de ayuda</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+              <a href="#contacto"> <button type="button" class="w-100 btn btn-lg btn-outline-success">Más información</button></a>
             </div>
           </div>
         </div>
@@ -240,51 +265,53 @@
               <h4 class="my-0 fw-normal">Pro</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+              <div class="row" id="precio">
+              <h3 class="card-title pricing-card-title">20€<small class="text-muted fw-light">/mo</small></h3>
+            </div>
               <ul class="list-unstyled mt-3 mb-4">
-                <li>20 users included</li>
-                <li>10 GB of storage</li>
-                <li>Priority email support</li>
-                <li>Help center access</li>
+                <li>Incluye los servicios del plan BASIC</li>
+                <li>Desarrollo de la app web</li>
+                <li>Soporte técnico</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+              <a href="#contacto"><button type="button" class="w-100 btn btn-lg btn-success">Más información</button></a>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm border-primary">
-            <div class="card-header py-3 text-white bg-primary border-primary">
-              <h4 class="my-0 fw-normal">Enterprise</h4>
+          <div class="card mb-4 rounded-3 shadow-sm border-success">
+            <div class="card-header py-3 text-white bg-success border-success">
+              <h4 class="my-0 fw-normal">Personalizable</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+              <div class="row" id="precio">
+                <p>desde </p>
+              <h3 class="card-title pricing-card-title"><small class="text-muted fw-light"></small>29€<small class="text-muted fw-light">/mo</small></h3>
+            </div>
               <ul class="list-unstyled mt-3 mb-4">
-                <li>30 users included</li>
-                <li>15 GB of storage</li>
-                <li>Phone and email support</li>
-                <li>Help center access</li>
+                <li>Incluye los servicios del plan PRO</li>
+                <li>Proyecto adaptado a tus necesidades</li>
+                <li>Seguridad extra</li>
               </ul>
-              <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+              <a href="#contacto"><button type="button" class="w-100 btn btn-lg btn-success">Más información</button></a>
             </div>
           </div>
         </div>
 
       </div>
-      <h2 class="display-6 text-center mb-4">Compare plans</h2>
       <div class="row">
         <div class="table-responsive">
           <table class="table text-center table-striped">
             <thead class="thead-dark">
               <tr>
                 <th style="width: 34%;"></th>
-                <th style="width: 22%;">Free</th>
+                <th style="width: 22%;">Prueba</th>
                 <th style="width: 22%;">Pro</th>
                 <th style="width: 22%;">Enterprise</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row" class="text-start">Public</th>
+                <th scope="row" class="text-start">Público</th>
                 <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" /></svg></svg></td>
                 <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -293,7 +320,7 @@
                     <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" /></svg></svg></td>
               </tr>
               <tr>
-                <th scope="row" class="text-start">Private</th>
+                <th scope="row" class="text-start">Privado</th>
                 <td></td>
                 <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" /></svg></svg></td>
@@ -304,7 +331,7 @@
 
             <tbody>
               <tr>
-                <th scope="row" class="text-start">Permissions</th>
+                <th scope="row" class="text-start">Permisos</th>
                 <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" /></svg></svg></td>
                 <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -313,7 +340,7 @@
                     <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" /></svg></svg></td>
               </tr>
               <tr>
-                <th scope="row" class="text-start">Sharing</th>
+                <th scope="row" class="text-start">Espacio en nube</th>
                 <td></td>
                 <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" /></svg></svg></td>
@@ -321,7 +348,7 @@
                     <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" /></svg></svg></td>
               </tr>
               <tr>
-                <th scope="row" class="text-start">Unlimited members</th>
+                <th scope="row" class="text-start">Miembros ilimitados</th>
                 <td></td>
                 <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" /></svg></svg></td>
@@ -329,7 +356,7 @@
                     <path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z" /></svg></svg></td>
               </tr>
               <tr>
-                <th scope="row" class="text-start">Extra security</th>
+                <th scope="row" class="text-start">Seguridad extra</th>
                 <td></td>
                 <td></td>
                 <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -342,389 +369,444 @@
     </section>
     <!-- ----------------------- Sección: Equipo   ----------------------------- -->
     <section id="equipo" id="team" class="pb-5">
-        <div class="container">
-            <h5 class="section-title h1">OUR TEAM</h5>
-            <div class="row">
-                <!-- Team member -->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="image-flip" >
-                        <div class="mainflip flip-0">
-                            <div class="frontside">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_05.png" alt="card image"></p>
-                                        <h4 class="card-title">Gintare</h4>
-                                        <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="backside">
-                                <div class="card">
-                                    <div class="card-body text-center mt-4">
-                                        <h4 class="card-title">Gintare</h4>
-                                        <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-skype"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-google"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+      <div class="container">
+        <h5 class="section-title h1">NUESTRO EQUIPO</h5>
+        <div class="row">
+          <!-- Team member -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="Imagenes/Gintare.jpg" alt="card image"></p>
+                      <h4 class="card-title">Gintare</h4>
+                      <p class="card-text">Marketing Director</p>
+                      <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                          class="fa fa-plus"></i></a>
                     </div>
+                  </div>
                 </div>
-                <!-- ./Team member -->
-                <!-- Team member -->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div class="mainflip">
-                            <div class="frontside">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="Imagenes/logo_trans.png" alt="card image"></p>
-                                        <h4 class="card-title">Logo</h4>
-                                        <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="backside">
-                                <div class="card">
-                                    <div class="card-body text-center mt-4">
-                                        <h4 class="card-title">Logo</h4>
-                                        <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-skype"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-google"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Gintare</h4>
+                      <p class="card-text">This is basic card with image on top, title, description and button.This is
+                        basic card with image on top, title, description and button.This is basic card with image on
+                        top, title, description and button.</p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-skype"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-google"></i>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
+                  </div>
                 </div>
-                <!-- ./Team member -->
-                <!-- Team member -->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div class="mainflip">
-                            <div class="frontside">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_03.png" alt="card image"></p>
-                                        <h4 class="card-title">Antonia</h4>
-                                        <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="backside">
-                                <div class="card">
-                                    <div class="card-body text-center mt-4">
-                                        <h4 class="card-title">Antonia</h4>
-                                        <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-skype"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-google"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ./Team member -->
-                <!-- Team member -->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div class="mainflip">
-                            <div class="frontside">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="Imagenes/dario.png" alt="card image"></p>
-                                        <h4 class="card-title">Dario</h4>
-                                        <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="backside">
-                                <div class="card">
-                                    <div class="card-body text-center mt-4">
-                                        <h4 class="card-title">Dario</h4>
-                                        <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-skype"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-google"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ./Team member -->
-                <!-- Team member -->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div class="mainflip">
-                            <div class="frontside">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="Imagenes/yelder.jpg" alt="card image"></p>
-                                        <h4 class="card-title">Yelder</h4>
-                                        <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="backside">
-                                <div class="card">
-                                    <div class="card-body text-center mt-4">
-                                        <h4 class="card-title">Yelder</h4>
-                                        <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-facebook"></i>
-                                                </a>
-                                            </li> 
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-skype"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-google"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ./Team member -->
-                <!-- Team member -->
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div class="mainflip">
-                            <div class="frontside">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="Imagenes/toni.jpg" alt="card image"></p>
-                                        <h4 class="card-title">Toni</h4>
-                                        <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="backside">
-                                <div class="card">
-                                    <div class="card-body text-center mt-4">
-                                        <h4 class="card-title">Toni</h4>
-                                        <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-skype"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
-                                                    <i class="fa fa-google"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ./Team member -->
-    
+              </div>
             </div>
+          </div>
+          <!-- ./Team member -->
+          <!-- Team member -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+              <div class="mainflip">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="Imagenes/antonio.jpg" alt="card image"></p>
+                      <h4 class="card-title">Antonio</h4>
+                      <p class="card-text">Product Owner</p>
+                      <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                          class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Antonio</h4>
+                      <p class="card-text">This is basic card with image on top, title, description and button.This is
+                        basic card with image on top, title, description and button.This is basic card with image on
+                        top, title, description and button.</p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-skype"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-google"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ./Team member -->
+          <!-- Team member -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+              <div class="mainflip">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="Imagenes/antonia.jpg" alt="card image"></p>
+                      <h4 class="card-title">Antonia</h4>
+                      <p class="card-text">Industrial Engineer and Renewable Energies Expert</p>
+                      <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                          class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Antonia</h4>
+                      <p class="card-text">This is basic card with image on top, title, description and button.This is
+                        basic card with image on top, title, description and button.This is basic card with image on
+                        top, title, description and button.</p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-skype"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-google"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ./Team member -->
+          <!-- Team member -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+              <div class="mainflip">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="Imagenes/dario.png" alt="card image"></p>
+                      <h4 class="card-title">Dario</h4>
+                      <p class="card-text">CEO</p>
+                      <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                          class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Dario</h4>
+                      <p class="card-text">This is basic card with image on top, title, description and button.This is
+                        basic card with image on top, title, description and button.This is basic card with image on
+                        top, title, description and button.</p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-skype"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-google"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ./Team member -->
+          <!-- Team member -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+              <div class="mainflip">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="Imagenes/yelder.jpg" alt="card image"></p>
+                      <h4 class="card-title">Yelder</h4>
+                      <p class="card-text">Frontend Developer</p>
+                      <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                          class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Yelder</h4>
+                      <p class="card-text">This is basic card with image on top, title, description and button.This is
+                        basic card with image on top, title, description and button.This is basic card with image on
+                        top, title, description and button.</p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-skype"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-google"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ./Team member -->
+          <!-- Team member -->
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+              <div class="mainflip">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p><img class=" img-fluid" src="Imagenes/toni.jpg" alt="card image"></p>
+                      <h4 class="card-title">Toni</h4>
+                      <p class="card-text">Backend Developer</p>
+                      <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                          class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Toni</h4>
+                      <p class="card-text">This is basic card with image on top, title, description and button.This is
+                        basic card with image on top, title, description and button.This is basic card with image on
+                        top, title, description and button.</p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-twitter"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-skype"></i>
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="social-icon text-xs-center" target="_blank"
+                            href="https://www.fiverr.com/share/qb8D02">
+                            <i class="fa fa-google"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ./Team member -->
+
         </div>
+      </div>
     </section>
     <!-- ----------------------- Sección: Contacto ----------------------------- -->
     <section id="contacto">
-      <h2>CONTACTO</h2>
-        <!--Contact heading-->
-        <div class="row">
-           <!--Grid column-->
-           <div class="col-sm-12 mb-4 col-md-5">
-              <!--Form with header-->
-              <div class="card border-primary rounded-0">
-                 <div class="card-header p-0">
-                    <div class="bg-primary text-white text-center py-2">
-                       <h3><i class="fa fa-envelope"></i> ¡Ay, payo, escribenoh!</h3>
-                       <p class="m-0">We’ll write rarely, but only the best content.</p>
-                    </div>
-                 </div>
-                 <div class="card-body p-3">
-                    
-                       <div class="form-group">
-                       <label> Your name </label>
-                       <div class="input-group">
-                          <input value="" type="text" name="data[name]" class="form-control" id="inlineFormInputGroupUsername" placeholder="Your name">
-                       </div>
-             </div>
-                       <div class="form-group">
-                          <label>Your email</label>
-                          <div class="input-group mb-2 mb-sm-0">
-                             <input type="email" value="" name="data[email]" class="form-control" id="inlineFormInputGroupUsername" placeholder="Email">
-                          </div>
-                       </div>
-                       <div class="form-group">
-                          <label>Subject</label>
-                          <div class="input-group mb-2 mb-sm-0">
-                             <input type="text" name="data[subject]" class="form-control" id="inlineFormInputGroupUsername" placeholder="Subject">
-                          </div>
-                       </div>
-                       <div class="form-group">
-                          <label>Message</label>
-                          <div class="input-group mb-2 mb-sm-0">
-                             <input type="text" class="form-control" name="mesg">
-                          </div>
-                       </div>
-                       <div class="text-center">
-                          <input type="submit" name="submit" value="submit" class="btn btn-primary btn-block rounded-0 py-2">
-                       </div>
-                  
+      <!--Contact heading-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-sm-12 mb-4 col-md-5">
+          <!--Form with header-->
+          <div class="card border-success rounded-0">
+            <div class="card-header p-0">
+              <div class="bg-success text-white text-center py-2">
+                <h3><i class="fa fa-envelope"></i> ¡Escríbenos!</h3>
+                <p class="m-0">Recibirás una respuesta lo más pronto posible</p>
+              </div>
+            </div>
+            <div class="card-body p-3">
+
+              <div class="form-group">
+                <label> Nombre </label>
+                <div class="input-group">
+                  <input value="" type="text" name="data[name]" class="form-control" id="inlineFormInputGroupUsername"
+                    placeholder="Your name">
                 </div>
-               
-                 </div>
               </div>
-           <!--Grid column-->
-         
-           <!--Grid column-->
-           <div class="col-sm-12 col-md-7">
-              <!--Google map-->
-              <div class="mb-4">
-                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18475.755549254172!2d25.329084098247098!3d54.63095132843818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd95798396d609%3A0xa00d18ec9ba8190!2zTmVtxJfFvmlzLCBMaXR1w6BuaWE!5e0!3m2!1sca!2ses!4v1616701238369!5m2!1sca!2ses" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <div class="form-group">
+                <label>Correo</label>
+                <div class="input-group mb-2 mb-sm-0">
+                  <input type="email" value="" name="data[email]" class="form-control" id="inlineFormInputGroupUsername"
+                    placeholder="Email">
+                </div>
               </div>
-              <!--Buttons-->
-              <div class="row text-center">
-                 <div class="col-md-4">
-                    <a class="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-map-marker"></i></a>
-                    <p> Your Address ….. </p>
-                 </div>
-                 <div class="col-md-4">
-                    <a class="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-phone"></i></a>
-                    <p>+91- 90000000</p>
-                 </div>
-                 <div class="col-md-4">
-                    <a class="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-envelope"></i></a>
-                    <p> your@gmail.com</p>
-                 </div>
+              <div class="form-group">
+                <label>Tema</label>
+                <div class="input-group mb-2 mb-sm-0">
+                  <select name="tema" class="form-control" id="inlineFormInputGroupUsername">
+                    <option>Parametrización de calidad y producción</option>
+                    <option>Soluciones informáticas</option>
+                    <option>Optimización</option>
+                    <option>Otros</option>
+                  </select>
+                </div>
               </div>
-           </div>
-           <!--Grid column-->
-           </div>
+              <div class="form-group">
+                <label>Mensaje</label>
+                <div class="input-group mb-2 mb-sm-0">
+                  <input type="text" class="form-control" name="mesg">
+                </div>
+              </div>
+              <div class="text-center">
+                <input type="submit" name="submit" value="ENVIAR" class="btn btn-success btn-block rounded-0 py-2">
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-sm-12 col-md-7">
+          <!--Google map-->
+          <div class="mb-4">
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d666.3023948079502!2d25.279536288295727!3d54.677310110925006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd946b30cb55ab%3A0x462b7dec09163fc9!2sSKYTECH.LT!5e0!3m2!1sca!2ses!4v1616747142513!5m2!1sca!2ses"
+              width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+          </div>
+          <!--Buttons-->
+          <div class="row text-center">
+            <div class="col-md-4">
+              <a class="bg-success px-3 py-2 rounded text-white mb-2 d-inline-block"><i
+                  class="fa fa-map-marker"></i></a>
+              <p> Calle Greenjava 123 </p>
+            </div>
+            <div class="col-md-4">
+              <a class="bg-success px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-phone"></i></a>
+              <p>+370 91 333 66 99 </p>
+            </div>
+            <div class="col-md-4">
+              <a class="bg-success px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-envelope"></i></a>
+              <p> contacto@javagoesgreen.com</p>
+            </div>
+          </div>
+        </div>
+        <!--Grid column-->
+      </div>
     </section>
   </main>
+  <!-- ----------------------- Sección: Footer ----------------------------- -->
   <footer class="site-footer">
-    <!-- ----------------------- Sección: Footer ----------------------------- -->
+
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6">
-          <h6>About</h6>
-          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+          <h6>Sobre Nosotros</h6>
+          <p class="text-justify"> JavaGoesGreen se basa en los principios de la economía circular. Buscamos la reducción del consumo de recursos a la vez que intentamos maximizar el rendimiento de la producción.</p>
+          <p class="text-justify">Hemos sido galardonados con el Premio Start-Up Revelación 2020 por nuestro compromiso con el planeta.</p>
         </div>
 
         <div class="col-xs-6 col-md-3">
-          <h6>Categories</h6>
+          <h6>Herramientas</h6>
           <ul class="footer-links">
             <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
             <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
@@ -732,27 +814,33 @@
             <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
             <li><a href="http://scanfcode.com/category/android/">Android</a></li>
             <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+            <li><a href="http://scanfcode.com/category/templates/">Extras</a></li>
           </ul>
         </div>
 
         <div class="col-xs-6 col-md-3">
-          <h6>Quick Links</h6>
+          <h6>Apartados</h6>
           <ul class="footer-links">
-            <li><a href="http://scanfcode.com/about/">About Us</a></li>
-            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#empresas">Empresas</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+            <li><a href="#precios">Precios</a></li>
+            <li><a href="#equipo">Equipo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </div>
       </div>
+      <div class="row" id="footer_logo">
+      <img id="logo_pie" src="imagenes/logo_trans.png"></img>
+    </div>
       <hr>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12">
-          <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
-       <a href="#">Java Goes Green</a>.
+          <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
+            <a href="#">Java Goes Green</a>.
           </p>
         </div>
 
@@ -761,22 +849,22 @@
             <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
             <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>   
+            <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
           </ul>
         </div>
       </div>
     </div>
-</footer>
-
+  </footer>
+  <!-- ----------------------- Scripts ----------------------------- -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-  integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
-</script>
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+  </script>
 
 </body>
 
